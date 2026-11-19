@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  index.html ke <head> ke andar ye lines paste karein:
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1e3a8a">
+<link rel="apple-touch-icon" href="icon-192.png">
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js');
+  });
+}
+</script>
+
 <title>Employees Log in Portal</title>
 <style>
 :root{--bg:#f5f6f8;--card:#fff;--tx:#1b2430;--mut:#667085;--line:#e3e6eb;--hd:#3f4f23;--acc:#556b31;--accbg:#edf1e3;--bad:#b42318;--badbg:#fdecea;--warn:#b54708;--warnbg:#fef3e2;--sum:#f0f2f5}
